@@ -1,0 +1,11 @@
+# Ignore all node_modules folders anywhere in the project
+node_modules/
+**/node_modules/
+
+# Ignore local environment secret files
+.env
+.env.local
+
+# Ignore build/dist production folders
+dist/
+build/
