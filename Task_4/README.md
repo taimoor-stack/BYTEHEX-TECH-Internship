@@ -36,5 +36,5 @@ Create a `.env` file in your execution scope and provide the following definitio
 # Infrastructure Runtime Configurations
 PORT=5004
 DATABASE_URL=your_aiven_postgresql_connection_string
-AIVEN_PASSWORD=AVNS_FDFeXOy9pNfF3xZ4zpc
+AIVEN_PASSWORD=your_actual_password_here
 ```
