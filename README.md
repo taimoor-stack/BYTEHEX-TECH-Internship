@@ -26,4 +26,5 @@ Every task folder containing a backend server requires its own local `.env` setu
 
 ```env
 AIVEN_PASSWORD=your_aiven_database_password
+AIVEN_PASSWORD=your_actual_password_here
 ```
