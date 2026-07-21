@@ -1,5 +1,4 @@
 //node server.js (starts backend)
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const { Pool } = require("pg");
@@ -18,11 +17,11 @@ app.use(express.json());
 
 // Aiven PostgreSQL Database Connection
 const pool = new Pool({
-  host: "pg-11211046-taimsheikh085-b6ce.l.aivencloud.com", // Filled from your Aiven dashboard screenshot
-  user: "avnadmin", // Filled from your Aiven dashboard screenshot
-  password: process.env.AIVEN_PASSWORD, // IMPORTANT: Go to Aiven, click the eye icon to reveal, and paste it here!
-  database: "defaultdb", // Filled from your Aiven dashboard screenshot
-  port: 10359, // Filled from your Aiven dashboard screenshot
+  host: "pg-11211046-taimsheikh085-b6ce.l.aivencloud.com",
+  user: "avnadmin",
+  password: "AVNS_FDfeXOy9pNfF3xZ4zpc",
+  database: "defaultdb",
+  port: 10359,
   ssl: { rejectUnauthorized: false },
 });
 

@@ -1,7 +1,6 @@
 // --- ENTERPRISE E-COMMERCE BACKEND ---
 // node server.js (to run the server)
 
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const { Pool } = require("pg");
@@ -44,12 +43,12 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // JWT Secret Key (In a real app, this goes in a hidden .env file)
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = "enterprise_mega_secret_key_2026";
 
 // DATABASE CONNECTION
 const pool = new Pool({
   user: "avnadmin",
-  password: process.env.AIVEN_PASSWORD,
+  password: "AVNS_FDfeXOy9pNfF3xZ4zpc",
   host: "pg-11211046-taimsheikh085-b6ce.l.aivencloud.com",
   port: 10359,
   database: "defaultdb",
